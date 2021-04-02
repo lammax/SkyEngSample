@@ -9,6 +9,14 @@ import Foundation
 
 enum Details {
     
-    
+    struct Text {
+        let text: String
+        let translation: String
+        
+        init(searchResult: Search.Result?) {
+            text = searchResult?.text ?? ""
+            translation = searchResult?.meanings?.first?.translation?.text ?? "no translation =("
+        }
+    }
     
 }

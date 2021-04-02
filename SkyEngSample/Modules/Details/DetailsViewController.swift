@@ -8,10 +8,15 @@
 import UIKit
 
 protocol DetailsViewControllerDelegate {
-    func doSmth()
+    func updateText(with text: Details.Text)
+    func updateImage(_ image: UIImage?)
 }
 
 class DetailsViewController: UIViewController {
+    
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var translationLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     private var viewModel: (DetailsViewModelDelegate & DetailsViewModelDatasource) = DetailsViewModel()
 
@@ -21,10 +26,24 @@ class DetailsViewController: UIViewController {
         viewModel.viewControllerDelegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.updateView()
+    }
+    
+    func set(searchResult: Search.Result) {
+        viewModel.set(searchResult: searchResult)
+    }
+    
 }
 
 extension DetailsViewController: DetailsViewControllerDelegate {
-    func doSmth() {
-        print("")
+    func updateText(with text: Details.Text) {
+        textLabel.text = text.text
+        translationLabel.text = text.translation
+    }
+    
+    func updateImage(_ image: UIImage?) {
+        self.imageView.image = image
     }
 }
