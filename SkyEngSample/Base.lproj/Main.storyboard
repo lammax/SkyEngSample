@@ -81,8 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-N5-nLi">
-                                <rect key="frame" x="20.5" y="134.5" width="373" height="627"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-N5-nLi">
+                                <rect key="frame" x="20.5" y="89.5" width="373" height="717"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-A8-cS5">
                                         <rect key="frame" x="152" y="0.0" width="69" height="32.5"/>
@@ -91,13 +91,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-HB-iCK">
-                                        <rect key="frame" x="160.5" y="213.5" width="52.5" height="25.5"/>
+                                        <rect key="frame" x="160.5" y="258.5" width="52.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-d0-qdq">
-                                        <rect key="frame" x="83" y="420" width="207" height="207"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-d0-qdq">
+                                        <rect key="frame" x="83" y="510" width="207" height="207"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7Y8-d0-qdq" secondAttribute="height" multiplier="1:1" id="dhp-8I-iMP"/>
                                         </constraints>
@@ -108,10 +108,10 @@
                         <viewLayoutGuide key="safeArea" id="Gho-wL-Fmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RS9-N5-nLi" firstAttribute="centerY" secondItem="koF-PN-MV3" secondAttribute="centerY" id="Kmy-Zu-LiA"/>
-                            <constraint firstItem="RS9-N5-nLi" firstAttribute="width" secondItem="koF-PN-MV3" secondAttribute="width" multiplier="0.9" id="MgF-SN-ox9"/>
-                            <constraint firstItem="RS9-N5-nLi" firstAttribute="height" secondItem="koF-PN-MV3" secondAttribute="height" multiplier="0.7" id="NuR-Q0-GuW"/>
-                            <constraint firstItem="RS9-N5-nLi" firstAttribute="centerX" secondItem="koF-PN-MV3" secondAttribute="centerX" id="tco-5w-QcY"/>
+                            <constraint firstItem="RS9-N5-nLi" firstAttribute="centerY" secondItem="koF-PN-MV3" secondAttribute="centerY" id="GvA-P1-t2h"/>
+                            <constraint firstItem="RS9-N5-nLi" firstAttribute="height" secondItem="koF-PN-MV3" secondAttribute="height" multiplier="0.8" id="NeE-Eu-Tzf"/>
+                            <constraint firstItem="RS9-N5-nLi" firstAttribute="width" secondItem="koF-PN-MV3" secondAttribute="width" multiplier="0.9" id="QTA-Tr-bUt"/>
+                            <constraint firstItem="RS9-N5-nLi" firstAttribute="centerX" secondItem="koF-PN-MV3" secondAttribute="centerX" id="jJs-vm-GUL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFB-Nj-5b3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="68"/>
+            <point key="canvasLocation" x="1744.9275362318842" y="67.633928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HQh-4l-YiF">
